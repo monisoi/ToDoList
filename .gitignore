@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+# production
+public/client.js
+
 # misc
 .DS_Store
 npm-debug.log
