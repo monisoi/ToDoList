@@ -9,4 +9,14 @@ describe('actions', () => {
     };
     expect(actions.add(text)).toEqual(expectedAction);
   });
+  it('should create an action to remove a todo', () => {
+    const text = 'Remove this';
+    const index = '0';
+    actions.add(text);
+    const expectedAction = {
+      type: 'REMOVE',
+      index
+    };
+    expect(actions.remove(index)).toEqual(expectedAction);
+  });
 });
