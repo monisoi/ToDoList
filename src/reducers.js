@@ -1,6 +1,5 @@
 export default function todoApp(state = { todos: [] }, action) {
   switch(action.type) {
-    case 'EDIT':
     case 'ADD':
       return { todos: [
         ...state.todos,

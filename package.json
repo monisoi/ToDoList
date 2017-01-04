@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "babel-node src/server.js",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js*"
   },
   "author": "",
   "license": "ISC",
