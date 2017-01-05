@@ -1,11 +1,11 @@
-import * as actions from '../src/actions.js';
+import * as actions from '../src/actions';
 
 describe('actions', () => {
   it('should create an action to add a todo', () => {
     const text = 'Finish docs';
     const expectedAction = {
       type: 'ADD',
-      text
+      text,
     };
     expect(actions.add(text)).toEqual(expectedAction);
   });
@@ -15,7 +15,7 @@ describe('actions', () => {
     actions.add(text);
     const expectedAction = {
       type: 'REMOVE',
-      index
+      index,
     };
     expect(actions.remove(index)).toEqual(expectedAction);
   });
